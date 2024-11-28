@@ -3,3 +3,35 @@
 *::after {
   box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  overscroll-behavior: none;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  grid-template-rows: 1fr 4.5fr;
+}
+
+.sidebar {
+  grid-row: 1 / span 2;
+
+  background-color: hsl(0, 0%, 20%);
+}
+
+.header {
+  grid-row: 1;
+
+  background-color: hsl(0, 0%, 98%);
+}
+
+.content {
+  grid-row: 2;
+
+  background-color: hsl(0, 0%, 60%);
+}

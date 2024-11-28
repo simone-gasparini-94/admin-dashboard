@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("assets/fonts/Roboto/roboto-woff2/Roboto-Medium.woff2") format("woff2");
+  src: url("assets/fonts/Roboto/roboto-woff2/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -34,29 +34,57 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+hr {
+  border: none;
+  border-top: 0.05px solid hsl(0, 0%, 50%);
+}
+
 .sidebar {
   grid-row: 1 / span 2;
 
   background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 98%);
-  padding: 1em 1em;
+  padding: 2rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 4px;
+}
+
+.icon-title-big {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.icon-title {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+
 
 .header {
   grid-row: 1;
 
   background-color: hsl(0, 0%, 98%);
+
+  display: grid;
+  grid-row: repeat(2, 1fr);
 }
 
 .content {
   grid-row: 2;
 
-  background-color: hsl(0, 0%, 60%);
-}
-
-.icon-title {
-  display: flex;
-  gap: 1em;
-  justify-content: start;
-  align-items: center;
+  background-color: hsl(0, 0%, 90%);
 }

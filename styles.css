@@ -22,6 +22,8 @@ body {
   grid-row: 1 / span 2;
 
   background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 98%);
+  padding: 1em 1em;
 }
 
 .header {
@@ -34,4 +36,11 @@ body {
   grid-row: 2;
 
   background-color: hsl(0, 0%, 60%);
+}
+
+.dashboard {
+  display: flex;
+  gap: 1em;
+  justify-content: start;
+  align-items: center;
 }

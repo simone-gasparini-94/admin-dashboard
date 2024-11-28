@@ -9,6 +9,20 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto/roboto-woff2/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto/roboto-woff2/Roboto-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body { 
   overscroll-behavior: none;
   height: 100vh;
@@ -16,6 +30,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 3.5fr;
   grid-template-rows: 1fr 4.5fr;
+
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar {
@@ -38,7 +54,7 @@ body {
   background-color: hsl(0, 0%, 60%);
 }
 
-.dashboard {
+.icon-title {
   display: flex;
   gap: 1em;
   justify-content: start;

@@ -228,7 +228,7 @@ button {
   background-color: var(--light-grey);
 
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: calc(100% - 16rem - 2rem) 16rem;
   gap: 2rem;
 
   padding: 2rem;
@@ -286,8 +286,9 @@ button {
   grid-column: 2;
   outline: 1px solid red;
 
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .right-top {

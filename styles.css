@@ -156,6 +156,12 @@ svg {
   border: 0.1px solid var(--dark-grey);
   border-radius: 12px;
   margin-right: 2rem;
+  padding-left: 1rem;
+}
+
+.search-bar:focus {
+  outline: 0.2px solid var(--off-black);
+  
 }
 
 .avatar {

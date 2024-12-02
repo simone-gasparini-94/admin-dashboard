@@ -196,6 +196,8 @@ hr {
 .name-big {
   font-size: 1.3rem;
   font-weight: 500;
+  white-space: nowrap;
+  margin-right: 1rem;
 }
 
 .user-name {
@@ -209,6 +211,18 @@ hr {
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+
+@media(max-width: 1200px) {
+  .container:nth-of-type(2) > .right-wrapper {
+    gap: 1rem;
+  }
+}
+
+@media(max-width: 900px) {
+  .container:nth-of-type(2) > .right-wrapper {
+    display: none;
+  }
 }
 
 button {
@@ -234,10 +248,16 @@ button {
   padding: 2rem;
 }
 
+@media(max-width: 900px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 .left-column {
   grid-column: 1;
-  outline: 1px solid red;
-  height: 100%;
 }
 
 .grid {
@@ -260,6 +280,7 @@ button {
   border-radius: 12px;
 
   height: 16rem;
+  min-width: 16rem;
 
   display: flex;
   flex-direction: column;
@@ -304,7 +325,6 @@ button {
 
 .right-column {
   grid-column: 2;
-  outline: 1px solid red;
 
   display: flex;
   flex-direction: column;

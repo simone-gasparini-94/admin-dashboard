@@ -115,6 +115,8 @@ svg {
   display: grid;
   grid-row: repeat(2, 1fr);
 
+  overflow-x: auto;
+
   position: sticky;
   top: 0;
   left: 16rem;

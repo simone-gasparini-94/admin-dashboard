@@ -297,3 +297,26 @@ button {
 .right-bottom {
   grid-row: 2;
 }
+
+.right-top > .container,
+.right-bottom > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-color: var(--off-white);
+  padding: 2rem;
+  border: 0.1px solid var(--dark-grey);
+  border-radius: 12px;
+}
+
+.right-top .unit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.right-bottom .unit {
+  display: flex;
+  gap: 0.4rem;
+}
